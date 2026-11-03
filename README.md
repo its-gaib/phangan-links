@@ -2,6 +2,10 @@
 
 A little link tree for a whole island. A calm, useful directory for life on Koh Phangan, Thailand.
 
+Live: https://phangan-links-steel.vercel.app
+
+Repository default branch: `island-directory`.
+
 ## Develop
 
 No runtime dependencies, accounts, analytics, or database. Python 3 builds semantic static HTML from `src/links.json`:
@@ -24,3 +28,12 @@ See `research/` for sources, dates, and verification limits. A successful public
 ## Credits
 
 Photography and font attribution are documented in `research/credits.md`. Third-party photos and fonts retain their respective licenses.
+
+## Deploy
+
+```sh
+python3 scripts/build.py
+npx --yes vercel@65.2.0 deploy --prod --yes --scope its-gaibs-projects
+```
+
+Run deployment from this repository directory. Keep `.vercel/` and `.env*` out of Git. The canonical URL is set in `scripts/build.py`; update it and rebuild if moving domains.

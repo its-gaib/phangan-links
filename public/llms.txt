@@ -2,7 +2,7 @@
 
 > A curated link directory for life on Koh Phangan, Thailand.
 
-Canonical website: https://phangan-links.vercel.app/
+Canonical website: https://phangan-links-steel.vercel.app/
 
 Links checked 2026-11-03. Public previews do not prove group activity or joining availability. Independent directory; not an official island authority.
 
@@ -54,6 +54,6 @@ Links checked 2026-11-03. Public previews do not prove group activity or joining
 
 ## Machine-readable resources
 
-- [JSON dataset](https://phangan-links.vercel.app/links.json): Every curated destination, category and verification context.
-- [Sitemap](https://phangan-links.vercel.app/sitemap.xml)
+- [JSON dataset](https://phangan-links-steel.vercel.app/links.json): Every curated destination, category and verification context.
+- [Sitemap](https://phangan-links-steel.vercel.app/sitemap.xml)
 - [Source and research](https://github.com/its-gaib/phangan-links)

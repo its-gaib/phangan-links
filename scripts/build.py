@@ -9,7 +9,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'public'
-SITE = 'https://phangan-links.vercel.app'
+SITE = 'https://phangan-links-steel.vercel.app'
 DATE = '2026-11-03'
 e = html.escape
 links = json.loads((ROOT / 'src/links.json').read_text())
