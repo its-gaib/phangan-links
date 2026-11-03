@@ -1,0 +1,59 @@
+# Phangan Links
+
+> A curated link directory for life on Koh Phangan, Thailand.
+
+Canonical website: https://phangan-links.vercel.app/
+
+Links checked 2026-11-03. Public previews do not prove group activity or joining availability. Independent directory; not an official island authority.
+
+## Living here
+
+- [PhanganBase](https://phanganbase.com/): Find a place to call home. Monthly stays, island-wide.
+- [Homes & housing](https://chat.whatsapp.com/CYhHq7oLQ3OForRLPrTAF3?s=cl&p=i&mlu=0): Find a home, a housemate, or your next island base.
+- [Buy & sell](https://chat.whatsapp.com/IxaZUt2iE3SJypdLbVHMu5?mode=gi_t): Preloved things looking for their next island home.
+- [Ride rentals](https://chat.whatsapp.com/C9itRKbN8DU1S4YhsfqM1G?mode=gi_t): Find wheels for your island days.
+- [Upcycle & recycle](https://chat.whatsapp.com/DQAx4fPIRZO2LJYDBFb4o0?mode=gi_c): Give things a second life. Keep the island a little greener.
+- [Recycling drop-off points](https://ecothailand.org/recyclesites/): Where to recycle, and what goes where.
+- [Inner Space coworking](https://innerspace.place/): A desk, a focused day & a community near Srithanu.
+- [Markets & walking streets](https://kohphangan.com/koh-phangan-markets/): A local guide to market wandering & finding a bite.
+
+## Find your people
+
+- [Digital nomads](https://chat.whatsapp.com/CYoXgCPgIQ5IyFlYvHyBGC?mode=gi_t): Remote workers, fresh ideas & island connections.
+- [Pets & their people](https://chat.whatsapp.com/BR2n99DQotp9dqrQYfaiO0?mode=gi_t): A community for island animals and those who love them.
+- [Island parents](https://chat.whatsapp.com/JsvFtnA05CoEP17m8awBBg?mode=gi_t): Connect with other families raising little islanders.
+- [Share a little food](https://chat.whatsapp.com/LwCyi6SQLZyLlV4YjXgEJF?mode=gi_c): Pass on surplus food and help it go to good use.
+- [PACS animal care](https://www.pacsthailand.com/): Care for island strays, adoption & volunteering.
+- [Give back · EcoThailand](https://ecothailand.org/interns-and-volunteers/): Get involved in local environmental & community projects.
+- [Shaolin arts](https://chat.whatsapp.com/FYAA1prpdMV4seE3cp9ObT): Connect with the island’s Shaolin arts community.
+- [Island volleyball](https://chat.whatsapp.com/Dsf7SWh1uyZ2TuVrpVvwuP): Find your people on the other side of the net.
+- [More community groups](https://docs.google.com/document/d/1H18auNoNBECzqIIS6eNHBoSP8o41p0UgezX4542DP6w/edit?usp=sharing): The community’s bigger list of island connections.
+
+## Out & about
+
+- [Todo.Today](https://todo.today/koh-phangan/): Classes, gatherings & what’s happening on the island.
+- [Party people](https://chat.whatsapp.com/LJ8534IoLEC5YyLuvDCNwK?mode=gi_t): For the nights when you feel like dancing.
+- [Events & promotions](https://chat.whatsapp.com/GEJgZ1HkQLW0uPAV77uPG6?mode=gi_t): Community events and offers, beyond the party scene.
+- [Hiking together](https://chat.whatsapp.com/DvsEn3NkD6a6UusFXNN6ok?mode=gi_c): Find walking buddies for jungle trails & viewpoints.
+- [COREsea](https://coresea.com/): Marine conservation, research & learning by the sea.
+- [Explore the island](https://www.tourismthailand.org/Destinations/Provinces/Ko-Phangan/358): Beaches, nature & island sights from Tourism Thailand.
+- [Jungle trails & viewpoints](https://kohphangan.com/koh-phangan-hiking/): Trail ideas for slower days out in the green.
+- [A little island laughter](https://chat.whatsapp.com/LgkYObLpk6p0VgunwH3Oj2): Comedy nights & workshops with the KPG comedy crew.
+- [Yoga by the sea](https://oneyogathailand.com/drop-in-schedule/): Drop-in yoga & meditation at One Yoga’s beachfront campus.
+- [Orion · move & unwind](https://www.orionhealing.com/weekly-schedule/): Yoga classes, workshops & a slower moment by the water.
+- [Samma Karuna](https://www.sammakaruna.org/): Explore yoga, meditation & workshops by the sea.
+
+## The essentials
+
+- [Visa conversations](https://chat.whatsapp.com/IdBv9yNO5Ha55RRLeaPjnl): Community experiences & questions about staying in Thailand.
+- [Lost & found](https://chat.whatsapp.com/DhnnjBbYi2Y9GNyN3TC7J3?mode=gi_t): A little island help to find what went missing.
+- [Lomprayah ferries](https://www.lomprayah.com/): Ferry routes, tickets & connections to the mainland.
+- [Seatran Discovery](https://www.seatrandiscovery.com/): Another way across the blue. Ferries & island transfers.
+- [Island weather · TMD](https://www.tmd.go.th/en/weather/province/surat-thani): Official Surat Thani forecasts before you head out.
+- [Thailand arrival card](https://tdac.immigration.go.th/arrival-card/): The official, free Thailand Digital Arrival Card portal.
+
+## Machine-readable resources
+
+- [JSON dataset](https://phangan-links.vercel.app/links.json): Every curated destination, category and verification context.
+- [Sitemap](https://phangan-links.vercel.app/sitemap.xml)
+- [Source and research](https://github.com/its-gaib/phangan-links)
