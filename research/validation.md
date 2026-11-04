@@ -13,3 +13,11 @@ Validated 3 November 2026.
 - Production responds publicly over HTTPS without authentication.
 
 No group was joined and no messages were sent. Public previews alone cannot prove group activity or availability.
+
+## Readability revision — 4 November 2026
+
+The directory now uses one column, 20px link titles, 16px descriptions and 17px search text. Removed decorative badges, icon tiles, slogans, uppercase metadata and card hover motion. Mobile photo header is 250px high.
+
+The community-document audit covers all 13 source entries and adds the verified local trading group. The HTML, JSON and structured data now contain 35 links. Security review of the changed template and generated output found no actionable issues; an isolated hostile-content build confirmed HTML and JSON-LD escaping.
+
+Stable browser QA passed at 1440, 1024, 800, 390 and 320px: no horizontal overflow; search, every filter, empty-state reset, keyboard access and no-JavaScript visibility pass. All 33 regular links and two featured links remain available. No page errors or failed requests. Axe reports zero automated violations at 1440, 390 and 320px; the desktop photographic caption remains a manual contrast check. Featured titles are 22px, regular titles 20px, descriptions 16px and the search input 17px.
