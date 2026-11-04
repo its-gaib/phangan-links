@@ -21,3 +21,7 @@ The directory now uses one column, 20px link titles, 16px descriptions and 17px 
 The community-document audit covers all 13 source entries and adds the verified local trading group. The HTML, JSON and structured data now contain 35 links. Security review of the changed template and generated output found no actionable issues; an isolated hostile-content build confirmed HTML and JSON-LD escaping.
 
 Stable browser QA passed at 1440, 1024, 800, 390 and 320px: no horizontal overflow; search, every filter, empty-state reset, keyboard access and no-JavaScript visibility pass. All 33 regular links and two featured links remain available. No page errors or failed requests. Axe reports zero automated violations at 1440, 390 and 320px; the desktop photographic caption remains a manual contrast check. Featured titles are 22px, regular titles 20px, descriptions 16px and the search input 17px.
+
+## Photo panel and font restoration — 4 November 2026
+
+Restored the original photo-panel markup exactly except the requested circular badge and eyebrow removals. Restored Fraunces headings/featured titles and italic headline accent alongside DM Sans body/list text. The current right-side list, contrast and 20px/16px text sizes remain. Browser checks at 1440, 1024, 801, 390 and 320px found no overflow; all 35 links work without JavaScript, search/reset pass, no browser errors and zero automated axe violations. The narrow security review found no actionable issues.
