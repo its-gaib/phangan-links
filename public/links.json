@@ -1,8 +1,15 @@
 {
   "name": "Phangan Links",
   "url": "https://www.phangan.fyi",
-  "checkedAt": "2026-11-03",
-  "verificationNote": "Public pages and WhatsApp invitation previews checked; activity, membership capacity and joining unverified. See repository research for evidence.",
+  "checkedAt": null,
+  "verificationSummary": {
+    "totalCount": 39,
+    "checkedCount": 37,
+    "missingCheckCount": 2,
+    "earliestCheckedAt": "2026-11-03",
+    "latestCheckedAt": "2026-11-09"
+  },
+  "verificationNote": "Recorded checks: 37 of 39 links, dated 2026-11-03 to 2026-11-09. 2 links have no recorded check date. Recorded dates describe entry-level public-page or invitation-preview checks, not group activity, capacity, trustworthiness or successful joining. See repository research for evidence.",
   "links": [
     {
       "id": "todo",
