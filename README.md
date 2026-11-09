@@ -17,6 +17,8 @@ python3 -m http.server 4173 --directory public
 
 Edit the curated data, then rebuild. The committed `public/` output runs on any static host. Vercel uses the included configuration.
 
+Listing descriptions must be at most 61 characters, including spaces and punctuation. The build rejects longer descriptions and reports the listing ID and character count.
+
 ## Discovery
 
 Every directory link is a real anchor in the initial HTML. Search and category filters are progressive enhancements. Structured data, a sitemap, robots.txt, llms.txt, llms-full.txt and a public JSON dataset help crawlers discover the directory. These improve discoverability; they cannot guarantee indexing.

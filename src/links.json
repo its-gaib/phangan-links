@@ -9,23 +9,25 @@
     "color": "sage",
     "checkedAt": "2026-11-03",
     "featured": true,
-    "keywords": "events yoga music workshops spiritual"
+    "keywords": "events yoga music workshops spiritual",
+    "section": "services"
   },
   {
     "id": "phanganbase",
     "title": "PhanganBase",
     "url": "https://phanganbase.com/",
-    "description": "Monthly rentals and longer stays around the island.",
+    "description": "Find your long-term island home, or list your own.",
     "category": "living",
     "icon": "home",
     "color": "sage",
     "checkedAt": "2026-11-03",
     "featured": true,
-    "keywords": "housing rentals accommodation"
+    "keywords": "housing rentals accommodation",
+    "section": "services"
   },
   {
     "id": "group-0",
-    "title": "Housing",
+    "title": "Housing · Single chat",
     "url": "https://chat.whatsapp.com/CYhHq7oLQ3OForRLPrTAF3?s=cl&p=i&mlu=0",
     "description": "WhatsApp group for homes and housemates.",
     "category": "living",
@@ -34,7 +36,21 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Housing"
+    "keywords": "Housing",
+    "section": "communities"
+  },
+  {
+    "id": "housing-2",
+    "title": "Housing · Sorted",
+    "url": "https://chat.whatsapp.com/C2dB46TxITaD93Fnf27elf?s=cl&p=i&mlu=4&ilr=4&iam=2",
+    "description": "Another WhatsApp group for homes and housemates.",
+    "category": "living",
+    "icon": "home",
+    "color": "sand",
+    "type": "WhatsApp group",
+    "verification": "User-provided invite; public preview, activity and joining unverified",
+    "keywords": "housing rentals accommodation housemates",
+    "section": "communities"
   },
   {
     "id": "group-1",
@@ -47,7 +63,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Digital Nomads"
+    "keywords": "Digital Nomads",
+    "section": "communities"
   },
   {
     "id": "group-2",
@@ -60,7 +77,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Buy & Sell"
+    "keywords": "Buy & Sell",
+    "section": "communities"
   },
   {
     "id": "group-3",
@@ -73,7 +91,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Ride Rentals"
+    "keywords": "Ride Rentals",
+    "section": "communities"
   },
   {
     "id": "group-4",
@@ -86,7 +105,22 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Party"
+    "keywords": "Party",
+    "section": "communities"
+  },
+  {
+    "id": "latin-dances",
+    "title": "Latin Dances",
+    "url": "https://chat.whatsapp.com/BfY1JLgXG5gCGh39FLR2r5?s=cl&p=a&iam=2",
+    "description": "WhatsApp group for Latin dance classes and parties.",
+    "category": "explore",
+    "icon": "sun",
+    "color": "rose",
+    "checkedAt": "2026-11-04",
+    "type": "WhatsApp group",
+    "verification": "Public invite preview titled Phangan Latino Dance KP; activity and joining unverified",
+    "keywords": "latin dance dances classes parties latino",
+    "section": "communities"
   },
   {
     "id": "group-5",
@@ -99,7 +133,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Events & Promotions"
+    "keywords": "Events & Promotions",
+    "section": "communities"
   },
   {
     "id": "group-6",
@@ -112,7 +147,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Pets"
+    "keywords": "Pets",
+    "section": "communities"
   },
   {
     "id": "group-7",
@@ -125,7 +161,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Parents"
+    "keywords": "Parents",
+    "section": "communities"
   },
   {
     "id": "group-8",
@@ -138,7 +175,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Visa"
+    "keywords": "Visa",
+    "section": "communities"
   },
   {
     "id": "group-9",
@@ -151,7 +189,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Lost & Found"
+    "keywords": "Lost & Found",
+    "section": "communities"
   },
   {
     "id": "group-10",
@@ -164,7 +203,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Hiking"
+    "keywords": "Hiking",
+    "section": "communities"
   },
   {
     "id": "group-11",
@@ -177,7 +217,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Leftover Food"
+    "keywords": "Leftover Food",
+    "section": "communities"
   },
   {
     "id": "group-12",
@@ -190,7 +231,8 @@
     "checkedAt": "2026-11-03",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "Upcycle | Recycle"
+    "keywords": "Upcycle | Recycle",
+    "section": "communities"
   },
   {
     "id": "lomprayah",
@@ -200,7 +242,8 @@
     "category": "essentials",
     "icon": "boat",
     "color": "sea",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "seatran",
@@ -210,7 +253,8 @@
     "category": "essentials",
     "icon": "boat",
     "color": "sea",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "weather",
@@ -220,7 +264,8 @@
     "category": "essentials",
     "icon": "sun",
     "color": "sand",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "recycle",
@@ -230,7 +275,8 @@
     "category": "living",
     "icon": "leaf",
     "color": "sage",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "pacs",
@@ -240,7 +286,8 @@
     "category": "community",
     "icon": "heart",
     "color": "rose",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "eco",
@@ -250,7 +297,8 @@
     "category": "community",
     "icon": "leaf",
     "color": "sage",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "coresea",
@@ -260,7 +308,8 @@
     "category": "explore",
     "icon": "wave",
     "color": "sea",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "cowork",
@@ -270,7 +319,8 @@
     "category": "living",
     "icon": "people",
     "color": "sand",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "guide",
@@ -280,7 +330,8 @@
     "category": "explore",
     "icon": "compass",
     "color": "sea",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "tdac",
@@ -290,7 +341,8 @@
     "category": "essentials",
     "icon": "compass",
     "color": "sand",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "markets",
@@ -300,7 +352,22 @@
     "category": "living",
     "icon": "bag",
     "color": "rose",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
+  },
+  {
+    "id": "deva-village",
+    "title": "Deva Village",
+    "url": "https://maps.app.goo.gl/Te46Lp3B2UichXmR7",
+    "description": "Fresh organic food on Koh Phangan.",
+    "category": "living",
+    "section": "services",
+    "icon": "leaf",
+    "color": "sage",
+    "type": "Google Maps",
+    "checkedAt": "2026-11-09",
+    "verification": "User-provided listing; Google Maps link resolves to Deva Phruek Village organic store",
+    "keywords": "fresh organic food groceries produce vegetables fruit"
   },
   {
     "id": "trails",
@@ -310,7 +377,8 @@
     "category": "explore",
     "icon": "leaf",
     "color": "sage",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "services"
   },
   {
     "id": "comedy",
@@ -320,7 +388,8 @@
     "category": "explore",
     "icon": "sun",
     "color": "sand",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "shaolin",
@@ -330,7 +399,8 @@
     "category": "community",
     "icon": "flower",
     "color": "sage",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "volley",
@@ -340,7 +410,8 @@
     "category": "community",
     "icon": "people",
     "color": "sea",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "trading",
@@ -353,7 +424,8 @@
     "checkedAt": "2026-11-04",
     "type": "WhatsApp group",
     "verification": "Matching named public invite preview; activity and joining unverified",
-    "keywords": "trading economics markets finance pro traders"
+    "keywords": "trading economics markets finance pro traders",
+    "section": "communities"
   },
   {
     "id": "more",
@@ -363,7 +435,8 @@
     "category": "community",
     "icon": "people",
     "color": "sage",
-    "checkedAt": "2026-11-03"
+    "checkedAt": "2026-11-03",
+    "section": "communities"
   },
   {
     "id": "oneyoga",
@@ -374,7 +447,8 @@
     "icon": "flower",
     "color": "sage",
     "checkedAt": "2026-11-03",
-    "keywords": "wellness yoga meditation spiritual mindfulness"
+    "keywords": "wellness yoga meditation spiritual mindfulness",
+    "section": "services"
   },
   {
     "id": "orion",
@@ -385,7 +459,8 @@
     "icon": "flower",
     "color": "sage",
     "checkedAt": "2026-11-03",
-    "keywords": "wellness yoga meditation spiritual mindfulness"
+    "keywords": "wellness yoga meditation spiritual mindfulness",
+    "section": "services"
   },
   {
     "id": "samma",
@@ -396,6 +471,26 @@
     "icon": "flower",
     "color": "sage",
     "checkedAt": "2026-11-03",
-    "keywords": "wellness yoga meditation spiritual mindfulness"
+    "keywords": "wellness yoga meditation spiritual mindfulness",
+    "section": "services"
+  },
+  {
+    "id": "authentic-media",
+    "title": "Authentic Media",
+    "url": "https://wa.me/66801181542",
+    "description": "Photography, Videography, Drone Shooting and Media Production",
+    "category": "living",
+    "section": "services",
+    "icon": "sun",
+    "color": "sand",
+    "type": "WhatsApp contact",
+    "verification": "User-provided contact; availability unverified",
+    "keywords": "photography videography photographer video media creative +66801181542",
+    "additionalLinks": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/authentic_media_productions?rpxt=MWx5M24wMHVhb2RreA=="
+      }
+    ]
   }
 ]
