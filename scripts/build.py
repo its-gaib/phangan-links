@@ -6,11 +6,11 @@ import html
 import json
 from pathlib import Path
 from urllib.parse import urlsplit
+from verification import shared_check_date, verification_summary, verification_text
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'public'
 SITE = 'https://www.phangan.fyi'
-DATE = '2026-11-03'
 UPDATED = '2026-11-09'
 MAX_DESCRIPTION_LENGTH = 61
 e = html.escape
@@ -38,6 +38,8 @@ for x in links:
 featured = [x for x in links if x.get('featured')]
 regular = [x for key, _, _ in sections for x in links if x['section'] == key and not x.get('featured')]
 links = featured + regular
+verification = verification_summary(links)
+check_summary = verification_text(verification)
 def card(x, featured=False):
     typ = 'WhatsApp group' if urlsplit(x['url']).hostname == 'chat.whatsapp.com' else x.get('type', 'Website')
     extras = x.get('additionalLinks', [])
@@ -63,12 +65,12 @@ page = f'''<!doctype html>
 <main id="directory" tabindex="-1"><header class="intro"><h1>Koh Phangan community groups &amp; useful links</h1><p>Find local communities, housing, events and everyday essentials in one independent island directory.</p></header>
 <section class="starting-points" aria-labelledby="start-title"><h2 id="start-title">Start here</h2><div class="featured-grid">{''.join(card(x, True) for x in featured)}</div></section>
 <section class="browse" aria-label="Island links"><span id="link-count" class="sr-only">{len(regular)} links</span><div class="filter-tools" hidden><label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search links" aria-label="Search island links" autocomplete="off"></label><div class="filters" role="group" aria-label="Filter links by category">{''.join(f'<button type="button" data-filter="{key}" aria-pressed="{str(key == "all").lower()}">{label}</button>' for key,label in categories)}</div></div>{directory_sections}<div class="no-results" hidden><h3>No matching links</h3><p>Try another search or category.</p><button type="button" id="reset-search">Show all links</button></div><p class="result-status sr-only" role="status" aria-live="polite"></p></section>
-<footer><div class="footer-links"><a href="https://github.com/its-gaib/phangan-links/issues/new?title=Suggest%20an%20island%20link" target="_blank" rel="noopener noreferrer">Suggest a link</a><a href="https://github.com/its-gaib/phangan-links/issues/new?title=Report%20an%20outdated%20link" target="_blank" rel="noopener noreferrer">Report a broken link</a></div><details><summary>About & credits</summary><p>WhatsApp links were checked 3 November 2026.</p><p>Photo: <a href="https://unsplash.com/photos/oacWGBoBQ98">Elizabeth Gottwald / Unsplash</a>, used under the <a href="https://unsplash.com/license">Unsplash License</a>. No ads, analytics or tracking cookies.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/links.json">JSON directory</a> · <a href="https://github.com/its-gaib/phangan-links">Source code</a></p></details></footer></main></body></html>'''
+<footer><div class="footer-links"><a href="https://github.com/its-gaib/phangan-links/issues/new?title=Suggest%20an%20island%20link" target="_blank" rel="noopener noreferrer">Suggest a link</a><a href="https://github.com/its-gaib/phangan-links/issues/new?title=Report%20an%20outdated%20link" target="_blank" rel="noopener noreferrer">Report a broken link</a></div><details><summary>About & credits</summary><p>{e(check_summary)}</p><p>Photo: <a href="https://unsplash.com/photos/oacWGBoBQ98">Elizabeth Gottwald / Unsplash</a>, used under the <a href="https://unsplash.com/license">Unsplash License</a>. No ads, analytics or tracking cookies.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/links.json">JSON directory</a> · <a href="https://github.com/its-gaib/phangan-links">Source code</a></p></details></footer></main></body></html>'''
 
 OUT.mkdir(exist_ok=True)
 (OUT/'index.html').write_text(page)
-(OUT/'links.json').write_text(json.dumps({'name':'Phangan Links','url':SITE,'checkedAt':DATE,'verificationNote':'Public pages and WhatsApp invitation previews checked; activity, membership capacity and joining unverified. See repository research for evidence.','links':links},ensure_ascii=False,indent=2)+'\n')
-md = '# Phangan Links\n\n> A curated link directory for life on Koh Phangan, Thailand.\n\nCanonical website: '+SITE+'/\n\nLinks checked '+DATE+'. Public previews do not prove group activity or joining availability. Independent directory; not an official island authority.\n\n'
+(OUT/'links.json').write_text(json.dumps({'name':'Phangan Links','url':SITE,'checkedAt':shared_check_date(verification),'verificationSummary':verification,'verificationNote':check_summary+' Recorded dates describe entry-level public-page or invitation-preview checks, not group activity, capacity, trustworthiness or successful joining. See repository research for evidence.','links':links},ensure_ascii=False,indent=2)+'\n')
+md = '# Phangan Links\n\n> A curated link directory for life on Koh Phangan, Thailand.\n\nCanonical website: '+SITE+'/\n\n'+check_summary+' Public previews do not prove group activity or joining availability. Independent directory; not an official island authority.\n\n'
 def markdown_link(x):
     extras = ''.join(f" · [{extra['label']}]({extra['url']})" for extra in x.get('additionalLinks', []))
     return f"- [{x['title']}]({x['url']}): {x['description']}{extras}\n"

@@ -27,6 +27,10 @@ Every directory link is a real anchor in the initial HTML. Search and category f
 
 See `research/` for sources, dates, and verification limits. A successful public invitation preview does not prove group activity, available places, trustworthiness, or successful joining. Listings are independent destinations, not endorsements. Recheck links before updating the verification date.
 
+Each entry's `checkedAt` records its actual check date. The build derives the date range and check coverage shown in the footer, LLM guides, and JSON metadata; missing dates remain explicitly unrecorded. The legacy top-level JSON `checkedAt` is `null` unless every entry has the same recorded date. `verificationSummary` exposes `totalCount`, `checkedCount`, `missingCheckCount`, `earliestCheckedAt`, and `latestCheckedAt`. Building or deploying does not mark links as rechecked.
+
+Run the verification-summary checks with `python3 -m unittest discover -s tests`.
+
 ## Credits
 
 Photography and font attribution are documented in `research/credits.md`. Third-party photos and fonts retain their respective licenses.
