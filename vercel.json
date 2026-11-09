@@ -6,6 +6,17 @@
   "outputDirectory": "public",
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "phangan-links-steel\\.vercel\\.app"
+        }
+      ],
+      "destination": "https://www.phangan.fyi/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {

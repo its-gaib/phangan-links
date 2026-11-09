@@ -83,7 +83,11 @@ md += '## Machine-readable resources\n\n- [JSON dataset]('+SITE+'/links.json): E
 hash_ = base64.b64encode(hashlib.sha256(structured.encode()).digest()).decode()
 csp = f"default-src 'none'; script-src 'self' 'sha256-{hash_}'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests"
 # Match only the production alias; preview hostnames keep serving their own build.
-redirects = [{'source': '/:path*', 'has': [{'type': 'host', 'value': r'phangan-links-steel\.vercel\.app'}], 'destination': SITE + '/:path*', 'permanent': True}]
+legacy_host = [{'type': 'host', 'value': r'phangan-links-steel\.vercel\.app'}]
+redirects = [
+    {'source': '/', 'has': legacy_host, 'destination': SITE + '/', 'permanent': True},
+    {'source': '/:path*', 'has': legacy_host, 'destination': SITE + '/:path*', 'permanent': True},
+]
 config = {'$schema':'https://openapi.vercel.sh/vercel.json','framework':None,'buildCommand':'python3 scripts/build.py','installCommand':'','outputDirectory':'public','redirects':redirects,'headers':[{'source':'/(.*)','headers':[{'key':'Content-Security-Policy','value':csp},{'key':'X-Content-Type-Options','value':'nosniff'},{'key':'X-Frame-Options','value':'DENY'},{'key':'Referrer-Policy','value':'strict-origin-when-cross-origin'},{'key':'Permissions-Policy','value':'camera=(), microphone=(), geolocation=()'}]}]}
 (ROOT/'vercel.json').write_text(json.dumps(config,indent=2)+'\n')
 print(f'Built {len(links)} crawlable links and discovery resources')
