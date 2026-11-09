@@ -1,3 +1,12 @@
+# Koh Phangan favicon
+
+The filled island silhouette in `public/assets/favicon.svg` is simplified from
+OpenStreetMap coastline data, north up, retrieved 9 November 2026:
+https://api.openstreetmap.org/api/0.6/map?bbox=99.965,9.665,100.095,9.81
+
+© OpenStreetMap contributors. Data is available under the Open Database License
+(ODbL): https://www.openstreetmap.org/copyright
+
 # Koh Phangan background photography
 
 Selected: aerial reef, turquoise shallows, palm-lined village shore on Ko Phangan.
