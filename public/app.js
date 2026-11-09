@@ -3,6 +3,7 @@ const tools = document.querySelector('.filter-tools');
 tools.hidden = false;
 const search = document.querySelector('#search');
 const cards = [...document.querySelectorAll('.link-grid .link-card')];
+const sections = [...document.querySelectorAll('.directory-section')];
 const buttons = [...document.querySelectorAll('[data-filter]')];
 let category = 'all';
 function filter() {
@@ -12,6 +13,9 @@ function filter() {
     const visible = (category === 'all' || card.dataset.category === category) && terms.every(term => card.dataset.search.includes(term));
     card.hidden = !visible;
     if (visible) count++;
+  }
+  for (const section of sections) {
+    section.hidden = ![...section.querySelectorAll('.link-card')].some(card => !card.hidden);
   }
   document.querySelector('#link-count').textContent = `${count} ${count === 1 ? 'LINK' : 'LINKS'} TO EXPLORE`;
   document.querySelector('.no-results').hidden = count !== 0;

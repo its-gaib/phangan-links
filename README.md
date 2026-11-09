@@ -2,7 +2,7 @@
 
 A little link tree for a whole island. A calm, useful directory for life on Koh Phangan, Thailand.
 
-Live: https://phangan-links-steel.vercel.app
+Live: https://www.phangan.fyi
 
 Repository default branch: `island-directory`.
 
@@ -16,6 +16,8 @@ python3 -m http.server 4173 --directory public
 ```
 
 Edit the curated data, then rebuild. The committed `public/` output runs on any static host. Vercel uses the included configuration.
+
+Listing descriptions must be at most 61 characters, including spaces and punctuation. The build rejects longer descriptions and reports the listing ID and character count.
 
 ## Discovery
 
@@ -33,7 +35,12 @@ Photography and font attribution are documented in `research/credits.md`. Third-
 
 ```sh
 python3 scripts/build.py
+npx --yes vercel@65.2.0 link --yes --project phangan-links --scope its-gaibs-projects
 npx --yes vercel@65.2.0 deploy --prod --yes --scope its-gaibs-projects
 ```
 
-Run deployment from this repository directory. Keep `.vercel/` and `.env*` out of Git. The canonical URL is set in `scripts/build.py`; update it and rebuild if moving domains.
+Run deployment from the reviewed repository checkout. Link it to the existing `phangan-links` project before deploying from a new worktree; do not let its task-directory name create a new project. Keep `.vercel/` and `.env*` out of Git.
+
+The canonical URL is set in `scripts/build.py`. It generates the HTML canonical, structured data, social URLs, JSON and text resources, sitemap and robots declaration together. The build also generates the permanent redirect from the exact production alias `phangan-links-steel.vercel.app` to the custom domain, preserving paths and query strings; preview deployment hostnames are unaffected. Change the generator and rebuild instead of editing `public/` or `vercel.json` by hand.
+
+After deployment, check the custom homepage and sitemap, plus a path and query on the production Vercel alias. The alias must return 308 to the corresponding custom-domain URL, and the custom homepage must return 200 with its self-canonical. Submit `https://www.phangan.fyi/sitemap.xml` in Search Console and use URL Inspection on the homepage to request indexing and check Google's selected canonical after recrawling.

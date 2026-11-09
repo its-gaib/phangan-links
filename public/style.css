@@ -109,7 +109,6 @@ main {
 h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(36px, 4vw, 56px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.15; margin: 0 0 14px; }
 .intro p { font-size: 19px; color: var(--secondary); margin: 0; }
 h2 { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 400; letter-spacing: -.3px; margin: 0 0 16px; }
-.featured-grid { display: grid; gap: 10px; }
 .link-card {
   display: flex;
   align-items: center;
@@ -125,6 +124,11 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 400; l
 .card-title { font-size: 20px; line-height: 1.4; color: var(--ink); overflow-wrap: anywhere; }
 .card-description { font-size: 16px; line-height: 1.55; color: var(--secondary); }
 .card-arrow { margin-left: auto; padding-right: 4px; font-size: 23px; color: var(--green); flex-shrink: 0; }
+.card-with-links { display: block; }
+.card-primary { display: flex; align-items: center; gap: 20px; text-decoration: none; }
+.card-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 8px; }
+.card-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--green); text-underline-offset: 4px; }
+.featured-grid { display: grid; gap: 10px; }
 .featured { padding: 22px 24px; border: 1px solid var(--line); border-radius: 5px; background: #eff2e9; }
 .featured .card-title { font-family: Fraunces, Georgia, serif; font-size: 22px; }
 .browse { margin-top: 42px; }
@@ -139,6 +143,10 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 400; l
 .filters button:hover { color: var(--green); background: #e9eee4; }
 .filters button[aria-pressed='true'] { color: var(--green); border-bottom-color: var(--green); }
 .link-grid { display: grid; }
+.directory-section { margin-top: 34px; }
+.directory-section + .directory-section { margin-top: 48px; }
+.directory-section h2 { font-size: 28px; margin-bottom: 8px; }
+.section-description { color: var(--secondary); margin: 0 0 12px; }
 .no-results { padding: 34px 0; }
 .no-results h3 { font-family: Fraunces, Georgia, serif; font-size: 21px; font-weight: 400; margin: 0 0 8px; }
 .no-results p { color: var(--secondary); }
